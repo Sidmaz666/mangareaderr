@@ -1,5 +1,3 @@
-## Manga Reader Website
-
 ## Preview
 
 <img src="./assets/img.png" alt="preview">
