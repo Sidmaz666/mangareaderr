@@ -10,7 +10,7 @@ function LoadImg(props){
 
   useEffect(() => {
     
-    axios.get(`https://fetch-manga.herokuapp.com/uri/${props.img}`)
+    axios.get(`https://manga-api-swrz.onrender.com/uri/${props.img}`)
     .then((res) => {
       setImg(res.data.image_uri)
       setLoad(false)

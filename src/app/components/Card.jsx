@@ -12,7 +12,7 @@ function Card(props){
     if(props.from === "error_page"){
       setImg(props.thumb)
     } else {
-    axios.get(`https://fetch-manga.herokuapp.com/thumb/${props.thumb}`)
+    axios.get(`https://manga-api-swrz.onrender.com/thumb/${props.thumb}`)
     .then((res) => {
       setImg(res.data.image_uri)
     })

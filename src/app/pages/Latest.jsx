@@ -23,7 +23,7 @@ function handlePageClick(event) {
 
     useEffect(() => {
 	
-	axios.get(`https://fetch-manga.herokuapp.com/recent/?page=${isPage}`)
+	axios.get(`https://manga-api-swrz.onrender.com/recent/?page=${isPage}`)
 	.then(data => {
 
 	  const recent_json = data.data.data.list
