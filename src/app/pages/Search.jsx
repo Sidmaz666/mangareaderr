@@ -25,7 +25,7 @@ function handlePageClick(event) {
     useEffect(() => {
 	
         setLoad(true)
-	axios.get(`https://manga-api-swrz.onrender.com/search?key=${query}&page=${isPage}`)
+	axios.get(`https://manga-api-production-6ca6.up.railway.app/search?key=${query}&page=${isPage}`)
 	.then(data => {
 
 	const search_json = data.data.data.list

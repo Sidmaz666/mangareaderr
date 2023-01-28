@@ -23,7 +23,7 @@ function handlePageClick(event) {
 
     useEffect(() => {
 	
-	axios.get(`https://manga-api-swrz.onrender.com/?page=${isPage}`)
+	axios.get(`https://manga-api-production-6ca6.up.railway.app/?page=${isPage}`)
 	.then(data => {
 
 	  const popular_json = data.data.data.list

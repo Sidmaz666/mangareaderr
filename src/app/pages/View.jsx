@@ -22,7 +22,7 @@ const [isHide,setHide] =  useState(true)
 
   useEffect(() => {
     setLoad(true)
-    axios.get(`https://manga-api-swrz.onrender.com/view/${chapter_id}`)
+    axios.get(`https://manga-api-production-6ca6.up.railway.app/view/${chapter_id}`)
       .then((data) => {
 	setDetails(data.data.data)
 	setImgId(data.data.data.image_id)

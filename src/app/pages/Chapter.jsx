@@ -17,12 +17,12 @@ export default function Chapter(){
 
   useEffect(() => {
     document.body.scrollTop = document.documentElement.scrollTop = 0
-    axios.get(`https://manga-api-swrz.onrender.com/chapter/${manga_id}`)
+    axios.get(`https://manga-api-production-6ca6.up.railway.app/chapter/${manga_id}`)
       .then(data => {
 		setChapter(data.data.data.list.reverse())
       })
 
-      axios.get(`https://manga-api-swrz.onrender.com/thumb/${state.thumb}`)
+      axios.get(`https://manga-api-production-6ca6.up.railway.app/thumb/${state.thumb}`)
       .then(data => {
 		setImg(data.data.image_uri)
       })

@@ -16,8 +16,8 @@ const [isLoad,setLoad] =  useState(true)
     useEffect(() => {
 	
       axios.all([
-	axios.get('https://manga-api-swrz.onrender.com/'),
-	axios.get('https://manga-api-swrz.onrender.com/recent')
+	axios.get('https://manga-api-production-6ca6.up.railway.app/'),
+	axios.get('https://manga-api-production-6ca6.up.railway.app/recent')
       ]).then(data => {
 
 	  const popular_json = data[0].data.data.list

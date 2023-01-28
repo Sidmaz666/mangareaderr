@@ -20,7 +20,7 @@ function Category(){
 
   useEffect(() => {
 
-    axios.get(`https://manga-api-swrz.onrender.com/category`)
+    axios.get(`https://manga-api-production-6ca6.up.railway.app/category`)
       .then(response => {
 		setCatList(response.data.data.list)
       })
@@ -31,7 +31,7 @@ function Category(){
       setLoad(true)
 
     
-    axios.get(`https://manga-api-swrz.onrender.com/category/${selGenre}`)
+    axios.get(`https://manga-api-production-6ca6.up.railway.app/category/${selGenre}`)
       .then(response => {
 	document.title = `Manga Reader ~ Category ~  ${selGenre.charAt(0).toUpperCase() + selGenre.slice(1)} `
 	setList(response.data.data.list)

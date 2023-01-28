@@ -29,7 +29,7 @@ function List(){
  
   useEffect(() => {   
       setSpin(true)
-    axios.get(`https://manga-api-swrz.onrender.com/list?q=${isLib}&page=${isPage}`)
+    axios.get(`https://manga-api-production-6ca6.up.railway.app/list?q=${isLib}&page=${isPage}`)
       .then((response) => {
 	document.title = `Manga reader ~ List : Filter '${isLib == '' && isLib !== 0 ? 'All' : isLib}' ${isPage > 1 ?  ` ~ Page ${isPage}` : '' }`
 	setLoad(response.data.data.list)
